@@ -241,40 +241,7 @@ body, html, .bg-container {
 .flex-item:hover img{
   transform:scale(1.6);
 }
-.portfolio-mask{
-    width: 350px;
-  height: 250px;
-      background-color: rgba(0, 0, 0, 0.3); 
-    transition: all 0.5s linear;
-    opacity: 0;
-}
-.flex-item a{
-  opacity: 0;
-    transform: scale(0);
-    transition: all 0.5s linear;
-}
-.flex-item h2{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    background: transparent;
-    margin: 20px 40px 0px 40px;
-    transform: scale(0);
-    color: #fff;
-    transition: all 0.5s linear;
-    opacity: 0;
-}
-.flex-item p{
-  color: #fff;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.5s linear;
-}
-.portfolio-mask:hover{
-  opacity: 0.7;
-}
-.flex-item:hover h2,.flex-item:hover p,.flex-item:hover a{
-  transform: scale(1);
-    opacity: 1;
-}
+
 
 /*.portfolio-container{
   float:none;
