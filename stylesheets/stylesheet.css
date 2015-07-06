@@ -25,6 +25,8 @@ body, html, .bg-container {
 .navbar-brand img{
   width: 25px;
   height: 25px;
+  opacity: 0.5;
+
 }
 
 .fixed-bg {
@@ -126,7 +128,7 @@ body, html, .bg-container {
   font-family: Avenir;
   
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 90px;
   text-align: center;
   overflow: hidden;
   letter-spacing: 1px;
@@ -136,11 +138,18 @@ body, html, .bg-container {
   width: 100px;
   text-align: center;
 }
+.spin-logo{
+  width:50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.5;
+
+}
 .whatIdo-container{
   justify-content:center;
   display: flex;
   flex-flow: row wrap;
-  padding-top:80px;
   
  
 }
@@ -150,25 +159,32 @@ body, html, .bg-container {
   color: #fff;
   text-align: center;
   padding-top: 80px;
+  padding-bottom: 120px;
 }
 .disc{
-  margin-right: 70px;
-  margin-left: 70px;
-  width: 170px;
-  height: 170px;
+  margin-right: 50px;
+  margin-left: 50px;
+ 
   text-align: center;
   
 }
-.disc.whatIdo-disc{
-  width: 80%;
-  height: 80%;
+.whatIdo-disc{
+   width: 170px;
+  height: 170px;
 }
-.focus-code{
-  width: 5%;
-  height: 15%;
+.whatIdo-disc img{
+  width: 100%;
+  height: 100%;
+}
+.focus-code-container{
+
+}
+.focus-code-container img{
+  width: 6%;
+  height: 40px;
   position: relative;
-  left:-68px;
-  top:10px;
+  left:0px;
+  top:-90px;
 }
 .reponsive-phone{
   width: 5%;
@@ -284,21 +300,18 @@ body, html, .bg-container {
 }
 
 .aboutMe-title{
-  text-align: left;
-  padding-top:70px;
-  font-size: 80px;
-  font-weight: bold;
-  font-family: Montserrat, sans-serif;
+  font-family: Avenir;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding-top:100px;
+  padding-bottom: 120px;
   
-  color:#fff;
 }
-.aboutMe-border{
-  border-bottom: 11px solid #fff;
-  width: 40%;
-  margin-bottom: 50px;
-}
+
 .aboutMe-info-container{
-  margin-left: 200px;
+  margin-left:300px;
+  max-width: 900px;
 }
 #aboutMe-info{
 
@@ -321,7 +334,20 @@ body, html, .bg-container {
   max-height:50px;
 
 }
-
+.followMe2{
+  display: none;
+}
+.contactForm-container{
+  padding-top: 90px;
+}
+#contactForm{
+  background: rgba(255,255,255,0.3);
+  max-height: 700px;
+  max-width: 600px;
+  margin: 0 auto;
+  
+  
+}
 .form input{
   background-color: #fff;
   opacity: 1;
@@ -359,14 +385,7 @@ body, html, .bg-container {
   margin-top:10px;
 }
 
-#contactForm{
-  background: rgba(255,255,255,0.3);
-  max-height: 700px;
-  max-width: 600px;
-  
- 
-  
-}
+
 
 .btn{
   width: 100%;
@@ -406,14 +425,24 @@ footer{
   width: 100%;
   height: 70px;
   background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  vertical-align: middle;
 }
 @media all and (max-width: 1050px) and (orientation:landscape){
+  .whatIdo-title{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .disc{
     margin-left:20px;
     margin-right: 20px;
   }
   .desc{
     font-size:20px;
+  }
+  .portfolio-title{
+    padding-bottom: 100px;
   }
   .flex-item{
     width:320px;
@@ -428,7 +457,8 @@ footer{
    
   }
   .aboutMe-title{
-    font-size: 30px;
+    
+    padding-bottom: 100px;
   }
   .aboutMe-border{
     border-bottom: 4px solid #fff;
@@ -436,19 +466,14 @@ footer{
   margin-bottom: 50px;
   }
   .aboutMe-info-container{
-    margin-left: 220px;
+    margin: 0 auto;
+
   }
   .item-space{
     display: none;
   }
   .contactForm-container{
-    display: flex;
-    flex-flow: row wrap;
-  justify-content: center;
-  padding-top: 30px;
-  }
-  .form{
-    font-size: 15px;
+    padding-top: 30px;
   }
 }
 @media all and (max-width: 1050px) and (orientation:portrait){
@@ -456,10 +481,17 @@ footer{
     padding-top: 400px;
   }
   .disc{
-    padding-bottom: 270px;
+    padding-bottom: 100px;
   }
-  .whatIdo-container{
-    padding-top: 50px;
+ .coding{
+   margin-left: 30px;
+ }
+ .focus-code-container img{
+   left:30px;
+ }
+  .whatIdo-title{
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
   .portfolio-title{
     padding-top: 80px;
@@ -477,9 +509,11 @@ footer{
     -webkit-column-count: 1; 
     -moz-column-count: 1; 
     column-count: 1;
+    font-size: 20px;
   }
   .aboutMe-title{
-    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
   .aboutMe-border{
     border-bottom: 4px solid #fff;
@@ -487,18 +521,11 @@ footer{
   margin-bottom: 50px;
   }
   .aboutMe-info-container{
-    margin-left: 150px;
+    width: 550px;
+    margin: 0 auto;
   }
 
-  .contactForm-container{
-    display: flex;
-    flex-flow: row wrap;
-  justify-content: center;
-  padding-top: 120px;
-  }
-  .form{
-    font-size: 18px;
-  }
+
 }
 @media all and (max-width: 760px) and (orientation:portrait){
   .intro-container{
@@ -510,15 +537,31 @@ footer{
 
   .whatIdo-title{
     padding-top: 30px;
+    padding-bottom: 50px;
     font-size: 30px;
   }
   .disc{
-    margin:0px;
-    padding-bottom: 200px;
-
-  }
+  margin-right: 10px;
+  margin-left: 10px;
+ 
+  text-align: center;
+  
+}
+.whatIdo-disc{
+   width: 125px;
+  height: 125px;
+}
+ .coding{
+   margin-left: 5px;
+ }
+ .focus-code-container img{
+  left:5px;
+  top:0.3px;
+  display: none;
+ }
+  
   .desc{
-    font-size: 20px;
+    font-size: 40px;
     display: none;
   }
   .focus-code{
@@ -557,6 +600,7 @@ footer{
   .aboutMe-title{
     font-size: 30px;
     padding-top: 30px;
+    padding-bottom: 50px;
   }
   .aboutMe-border{
     border-bottom: 4px solid #fff;
@@ -614,4 +658,89 @@ height: 15px;
   
 }
 
+}
+@media all and (max-width: 760px) and (orientation:landscape){
+  .intro-container{
+    padding-top: 130px;
+  }
+  .name{
+    font-size: 20px;
+  }
+  .title{
+    font-size: 15px;
+    padding-top: 30px;
+  }
+  .whatIdo-title{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+  .disc{
+    height: 150px;
+    width: 150px;
+    margin: 0;
+  }
+ 
+  .desc{
+    display: none;
+  }
+  .portfolio-title{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+  .flex-item{
+    height: 140px;
+    width: 200px;
+  }
+  .aboutMe-title{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+  .aboutMe-info-container{
+    width: 500px;
+  }
+  #aboutMe-info{
+    -webkit-column-count: 1; 
+    -moz-column-count: 1; 
+    column-count: 1;
+    font-size: 13px;
+  }
+  #aboutMe-info p{
+  margin-bottom: 10px;
+
+}
+  .contactForm-container{
+    display: none;
+  }
+  .followMe2{
+    display: block;
+    background: rgba(255,255,255,0.3);
+    height: 350px;
+  }
+  .followMe-title2{
+    margin: 0;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: #000;
+  }
+  .socialMedia2{
+    text-align: center;
+  }
+  .socialMedia2 img{
+     width: 80px;
+     height: 80px;
+     margin-left: 10px;
+     margin-right: 10px;
+  }
+  .myEmail2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #000;
+
+  }
 }
