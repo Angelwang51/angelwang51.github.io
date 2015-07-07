@@ -41,15 +41,15 @@ body, html, .bg-container {
 
  
 .fixed-bg.bg-1 {
-  background-image: url(shutterstock_205553143.jpg);
+  background-image: url(../images/shutterstock_205553143sm.jpg);
 
 }
 .fixed-bg.bg-2 {
-  background-image: url(../images/photo-1422349829867-7587357f2b581s.jpg);
+  background-image: url(../images/photo-1422349829867-7587357f2b581sm.jpg);
   
 }
 .fixed-bg.bg-3 {
-  background-image: url(../images/photo-1434569117012-ce134ee1a088s.jpg);
+  background-image: url(../images/photo-1434569117012-ce134ee1a088sm.jpg);
 }
 .fixed-bg.bg-4{
   background-image: url(../images/photo-bg3.jpg)
