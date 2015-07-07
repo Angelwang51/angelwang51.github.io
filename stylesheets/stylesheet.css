@@ -52,7 +52,7 @@ body, html, .bg-container {
   background-image: url(photo-1434569117012-ce134ee1a088.jpg);
 }
 .fixed-bg.bg-4{
-  background-image: url(../images/aboutMe3.jpg)
+  background-image: url(../images/photo-bg3.jpg)
 }
 .scrolling-bg {
   min-height: 80%;
@@ -164,26 +164,35 @@ body, html, .bg-container {
 .disc{
   margin-right: 50px;
   margin-left: 50px;
- 
-  text-align: center;
+ text-align: center;
+
   
 }
+.coding{
+  margin-left:27px;
+}
+.responsive{
+  margin-left: 25px;
+}
+
 .whatIdo-disc{
    width: 170px;
   height: 170px;
+  text-align: center;
+  position: relative;
 }
 .whatIdo-disc img{
   width: 100%;
   height: 100%;
 }
 .focus-code-container{
-
+  position: relative;
 }
 .focus-code-container img{
   width: 6%;
   height: 40px;
   position: relative;
-  left:0px;
+  left:27px;
   top:-90px;
 }
 .reponsive-phone{
@@ -277,7 +286,7 @@ body, html, .bg-container {
 }
 
 .aboutMe-info-container{
-  margin-left:300px;
+  margin: 0 auto;
   max-width: 900px;
 }
 #aboutMe-info{
@@ -393,8 +402,11 @@ footer{
   height: 70px;
   background-color: #333;
   color: #fff;
-  font-size: 15px;
-  vertical-align: middle;
+  font-size: 16px;
+}
+.copyright{
+  padding: 23px;
+  margin-left: 60px;
 }
 @media all and (max-width: 1050px) and (orientation:landscape){
   .whatIdo-title{
@@ -415,11 +427,9 @@ footer{
     width:320px;
     height: 220px; 
   }
-  .bg-4{
-    background: #000;
-  }
+ 
   #aboutMe-info{
-    font-size: 15px;
+    font-size: 17px;
     color: #fff;
    
   }
@@ -427,11 +437,7 @@ footer{
     
     padding-bottom: 100px;
   }
-  .aboutMe-border{
-    border-bottom: 4px solid #fff;
-  width: 20%;
-  margin-bottom: 50px;
-  }
+ 
   .aboutMe-info-container{
     margin: 0 auto;
 
@@ -441,6 +447,10 @@ footer{
   }
   .contactForm-container{
     padding-top: 30px;
+  }
+    .copyright{
+    font-size: 19px;
+
   }
 }
 @media all and (max-width: 1050px) and (orientation:portrait){
@@ -482,14 +492,14 @@ footer{
     padding-top: 80px;
     padding-bottom: 50px;
   }
-  .aboutMe-border{
-    border-bottom: 4px solid #fff;
-  width: 20%;
-  margin-bottom: 50px;
-  }
+
   .aboutMe-info-container{
     width: 550px;
     margin: 0 auto;
+  }
+  .copyright{
+    font-size: 20px;
+    margin-left: 23px;
   }
 
 
@@ -511,7 +521,6 @@ footer{
   margin-right: 10px;
   margin-left: 10px;
  
-  text-align: center;
   
 }
 .whatIdo-disc{
@@ -521,10 +530,14 @@ footer{
  .coding{
    margin-left: 5px;
  }
- .focus-code-container img{
-  left:5px;
+ .responsive{
+  margin-left: 0px;
+}
+ .focus-code{
+  left:-99px;
   top:0.3px;
-  display: none;
+  position: relative;
+  
  }
   
   .desc{
@@ -557,6 +570,7 @@ footer{
   .item-space{
     display: none;
   }
+
   .aboutMe-info-container{
     width: 300px;
     margin:0 auto;
@@ -624,7 +638,11 @@ height: 15px;
   margin-top: 20px;
   
 }
-
+.copyright{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
 }
 @media all and (max-width: 760px) and (orientation:landscape){
   .intro-container{
@@ -643,11 +661,21 @@ height: 15px;
     font-size: 30px;
   }
   .disc{
-    height: 150px;
-    width: 150px;
-    margin: 0;
+    margin-right: 30px;
+  margin-left: 30px;
+    
+    
   }
- 
+  .coding{
+    margin-left: -8px;
+  }
+  .reponsive{
+    margin-left: 18px;
+  }
+ .whatIdo-disc{
+   width: 100px;
+  height: 100px;
+}
   .desc{
     display: none;
   }
@@ -709,5 +737,10 @@ height: 15px;
     font-size: 20px;
     color: #000;
 
+  }
+  .copyright{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
   }
 }
