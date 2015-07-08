@@ -731,7 +731,7 @@ height: 15px;
  
     .fixed-bg.bg-1 {
   background-image: url(../images/shutterstock_205553143sm.jpg);
-  
+
 
 }
 .fixed-bg.bg-2 {
@@ -742,10 +742,7 @@ height: 15px;
   background-image: url(../images/photo-1434569117012-ce134ee1a088sm.jpg);
 }
     
-   .fixed-bg{
-    background-size: 2024px 768px !important;
-    
-  }
+   
   
 }
 /* Page background-image portrait for iPad 3 */
