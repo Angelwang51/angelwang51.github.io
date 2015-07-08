@@ -728,28 +728,18 @@ height: 15px;
 /* Page background-image landscape for iPad 3 */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 
- 
-    .fixed-bg.bg-1 {
-  background-image: url(../images/shutterstock_205553143sm.jpg);
-
-
-}
-.fixed-bg.bg-2 {
-  background-image: url(../images/photo-1422349829867-7587357f2b581sm.jpg);
-  
-}
-.fixed-bg.bg-3 {
-  background-image: url(../images/photo-1434569117012-ce134ee1a088sm.jpg);
-}
-    
+body, html, .bg-container {
+  /* important */
+  min-width: 1024px;
+} 
    
   
 }
 /* Page background-image portrait for iPad 3 */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
-  .fixed-bg{
-    background-size: 2024px 768px !important;
-    
-  }
+body, html, .bg-container {
+  /* important */
+  min-width: 768px;
+} 
 }
