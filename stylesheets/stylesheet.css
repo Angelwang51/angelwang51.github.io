@@ -726,7 +726,7 @@ height: 15px;
 
 
 /* Page background-image landscape for iPad 3 */
-@media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+@media screen and (min-resolution: 120dpi) {
 
 body, html, .bg-container {
   /* important */
