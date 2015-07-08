@@ -726,11 +726,7 @@ height: 15px;
 
 
 /* Page background-image landscape for iPad 3 */
-@media screen 
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 
   .fixed-bg{
     height: 768px;
@@ -738,11 +734,7 @@ height: 15px;
   }
 }
 /* Page background-image portrait for iPad 3 */
-@media screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
   .fixed-bg{
     height: 1024px;
