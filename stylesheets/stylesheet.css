@@ -42,15 +42,15 @@ body, html, .bg-container {
 
  
 .fixed-bg.bg-1 {
-  background-image: url(../images/shutterstock_205553143sm.jpg);
+  background-image: url(shutterstock_205553143.jpg);
 
 }
 .fixed-bg.bg-2 {
-  background-image: url(../images/photo-1422349829867-7587357f2b581sm.jpg);
+  background-image: url(../images/photo-1422349829867-7587357f2b581s.jpg);
   
 }
 .fixed-bg.bg-3 {
-  background-image: url(../images/photo-1434569117012-ce134ee1a088sm.jpg);
+  background-image: url(../images/photo-1434569117012-ce134ee1a088s.jpg);
 }
 .fixed-bg.bg-4{
   background-image: url(../images/photo-bg3.jpg)
@@ -122,6 +122,7 @@ body, html, .bg-container {
   font-size:40px;
   font-weight: 400; 
   font-family:Avenir;
+  color: #fff;
 }
 .title{
   font-size: 20px;
@@ -159,12 +160,12 @@ body, html, .bg-container {
   font-size: 40px;
   color: #fff;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .disc{
-  margin-right: 70px;
-  margin-left: 70px;
+  margin-right: 4em;
+  margin-left: 4em;
  text-align: center;
 
   
@@ -205,6 +206,7 @@ body, html, .bg-container {
   color: #fff;
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
   
 }
 
@@ -264,11 +266,11 @@ body, html, .bg-container {
   color: #fff;
   text-align: center;
   padding-top:100px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .item-space{
-  width: 70px;
+  max-width: 70px;
 }
 
 .aboutMe-title{
@@ -277,7 +279,7 @@ body, html, .bg-container {
   color: #fff;
   text-align: center;
   padding-top:100px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   
 }
 
@@ -310,7 +312,7 @@ body, html, .bg-container {
   display: none;
 }
 .contactForm-container{
-  padding-top: 90px;
+  padding-top: 2em;
 }
 #contactForm{
   background: rgba(255,255,255,0.3);
@@ -395,7 +397,7 @@ body, html, .bg-container {
 
 footer{
   width: 100%;
-  height: 70px;
+  max-height: 70px;
   background-color: #333;
   color: #fff;
   font-size: 16px;
@@ -404,7 +406,250 @@ footer{
   padding: 23px;
   margin-left: 60px;
 }
-@media all and (max-width: 1025px) and (orientation:landscape) and (-webkit-max-device-pixel-ratio: 1){
+
+
+@media screen and (max-width: 1180px){
+    .disc{
+  margin-right: 2.5em;
+  margin-left: 2.5em;
+ text-align: center;
+
+  
+}
+}
+@media screen and (max-width: 1065px){
+
+.flex-item {
+  max-width: 320px;
+  max-height: 220px; 
+  overflow: hidden;
+  
+}
+
+}
+@media screen and (max-width: 1011px){
+  .disc{
+  margin-right: 1.6em;
+  margin-left: 1.6em;
+ 
+
+  
+}
+}
+@media screen and (max-width: 975px){
+  .flex-item {
+  max-width: 300px;
+  max-height: 200px; 
+  overflow: hidden;
+  
+}
+}
+@media screen and (max-width: 910px){
+   .disc{
+  margin-right: 1.6em;
+  margin-left: 1.6em;
+
+
+  
+}
+.whatIdo-disc{
+  max-width: 130px;
+  max-height: 130px;
+  text-align: center;
+  position: relative;
+}
+
+  .focus-code-container img{
+  width: 6%;
+  height: 30px;
+  position: relative;
+  left:3px;
+  top:-70px;
+}
+
+.desc{
+  font-size: 17px;
+}
+ .flex-container{
+  display: block;
+  max-width:280px; 
+  margin: 0 auto;
+
+ }
+ .wrap{
+  
+  
+ }
+ .flex-item {
+  max-width: 280px;
+  max-height: 180px; 
+  overflow: hidden;
+  
+}
+.aboutMe-info-container{
+  margin: 0 auto;
+  max-width: 550px;
+}
+#aboutMe-info{
+
+    -webkit-column-count: 1; 
+    -moz-column-count: 1; 
+    column-count: 1;
+
+    font-size: 17px;
+   
+
+
+}
+#aboutMe-info p{
+  margin-bottom: 20px;
+}
+.cv-github img{
+  max-width: 50px;
+  max-height:50px;
+
+}
+.title-all{
+  font-size: 30px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+}
+@media screen and (max-width: 776px){
+   .disc{
+  margin-right: 4em;
+  margin-left: 4em;
+
+  
+}
+.desc{
+  font-size: 15px;
+}
+.aboutMe-info-container{
+  margin: 0 auto;
+  max-width: 450px;
+}
+#aboutMe-info{
+
+    -webkit-column-count: 1; 
+    -moz-column-count: 1; 
+    column-count: 1;
+ 
+    font-size: 15px;
+    
+
+
+}
+#aboutMe-info p{
+  margin-bottom: 15px;
+}
+#contactForm{
+
+  max-width: 500px;
+  
+  
+  
+}
+.form input{
+ 
+  max-width: 400px;
+  
+}
+
+.contact-message{
+
+  max-width: 400px;
+  
+}
+
+
+
+.btn{
+  
+  max-width: 400px;
+  
+}
+
+
+}
+@media screen and (max-width: 500px){
+  .disc{
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 4em;
+
+   
+  }
+  .desc{
+    display: none;
+  }
+  .aboutMe-info-container{
+  
+  max-width: 21em;
+}
+#aboutMe-info{
+
+    -webkit-column-count: 1; 
+    -moz-column-count: 1; 
+    column-count: 1;
+ 
+    font-size: 1em;
+    
+
+
+}
+#aboutMe-info p{
+  margin-bottom: 1em;
+}
+#contactForm{
+
+  max-width: 400px;
+  
+  
+  
+}
+.form input{
+ 
+  max-width: 300px;
+  margin-left: 30px;
+}
+
+.contact-message{
+
+  max-width: 300px;
+  margin-left: 30px;
+  
+}
+
+
+
+.btn{
+  
+  max-width: 300px;
+  margin-left: 30px;
+  
+}
+
+
+}
+
+/*
+@media screen and (max-width: 1050px){
+    .disc{
+  margin-right: 30px;
+  margin-left: 30px;
+ text-align: center;
+
+  
+}
+}
+*/
+
+
+/*
+@media screen and (max-width: 1025px) and (orientation:landscape){
+  
   .whatIdo-title{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -448,8 +693,12 @@ footer{
     font-size: 19px;
 
   }
+  .name{
+    color:green;
+  }
 }
-@media all and (max-width: 1025px) and (orientation:portrait) and (-webkit-max-device-pixel-ratio: 1){
+
+@media screen and (max-width: 1025px) and (orientation:portrait) {
   .intro-container{
     padding-top: 400px;
   }
@@ -493,10 +742,14 @@ footer{
     font-size: 20px;
     margin-left: 23px;
   }
-
+ .name{
+  color:blue;
+ }
 
 }
-@media all and (max-width: 769px) and (orientation:portrait) and (-webkit-max-device-pixel-ratio: 1){
+
+@media screen and (max-width: 700px) and (orientation:portrait) {
+
   .intro-container{
     padding-top: 200px;
   } 
@@ -624,8 +877,13 @@ height: 15px;
     text-align: center;
     margin: 0;
   }
+  .name{
+  color:orange;
 }
-@media all and (max-width: 769px) and (orientation:landscape) and (-webkit-max-device-pixel-ratio: 1){
+}
+
+
+@media screen and (max-width: 769px) and (orientation:landscape) {
   .intro-container{
     padding-top: 130px;
   }
@@ -722,14 +980,20 @@ height: 15px;
     text-align: center;
     margin: 0;
   }
+  .name{
+    color:yellow;
+  }
 }
-
+*/
 
 /* Page background-image landscape for iPad 3 */
-@media screen and (min-resolution: 120dpi) {
+
+@media screen and (min-resolution: 192dpi),
+only screen and (min-device-pixel-ratio:2) {
 
 body, html, .bg-container {
   /* important */
+
   height: 768px;
 } 
 .name{
@@ -738,4 +1002,5 @@ body, html, .bg-container {
    
   
 }
+
 
