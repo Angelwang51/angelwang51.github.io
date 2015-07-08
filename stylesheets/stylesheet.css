@@ -412,7 +412,7 @@ footer{
 
 body, html, .bg-container {
   /* important */
-  height: 768px;
+  height: 1vh;
 } 
    
   
@@ -422,6 +422,6 @@ body, html, .bg-container {
 
 body, html, .bg-container {
   /* important */
-  height: 1024px;
+  height: 1vh;
 } 
 }
