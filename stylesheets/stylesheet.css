@@ -31,6 +31,7 @@ body, html, .bg-container {
 
 .fixed-bg {
   min-height: 100%;
+  min-width: 100%;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -403,7 +404,7 @@ footer{
   padding: 23px;
   margin-left: 60px;
 }
-@media all and (max-width: 1050px) and (orientation:landscape){
+@media all and (max-width: 1025px) and (orientation:landscape){
   .whatIdo-title{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -448,7 +449,7 @@ footer{
 
   }
 }
-@media all and (max-width: 1050px) and (orientation:portrait){
+@media all and (max-width: 1025px) and (orientation:portrait){
   .intro-container{
     padding-top: 400px;
   }
@@ -495,7 +496,7 @@ footer{
 
 
 }
-@media all and (max-width: 760px) and (orientation:portrait){
+@media all and (max-width: 769px) and (orientation:portrait){
   .intro-container{
     padding-top: 200px;
   } 
@@ -624,7 +625,7 @@ height: 15px;
     margin: 0;
   }
 }
-@media all and (max-width: 760px) and (orientation:landscape){
+@media all and (max-width: 769px) and (orientation:landscape){
   .intro-container{
     padding-top: 130px;
   }
@@ -720,5 +721,31 @@ height: 15px;
     font-size: 15px;
     text-align: center;
     margin: 0;
+  }
+}
+
+
+/* Page background-image landscape for iPad 3 */
+@media screen 
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .fixed-bg{
+    height: 768px;
+   
+  }
+}
+/* Page background-image portrait for iPad 3 */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .fixed-bg{
+    height: 1024px;
+    
   }
 }
