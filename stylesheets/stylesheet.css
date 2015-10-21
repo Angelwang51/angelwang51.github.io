@@ -384,6 +384,12 @@ footer{
   }
 }
 @media screen and (max-width: 500px){
+  .grid-pad-whatIdo{
+    padding-top: 50px;
+  }
+  .grid-pad-portfolio{
+    padding-top: 60px;
+  }
   .name{
     font-size: 35px;
   }
