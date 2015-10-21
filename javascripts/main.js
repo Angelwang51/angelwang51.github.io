@@ -1,11 +1,13 @@
 $(document).ready(function(){
 	$(".btn").click(function(){
+        var postDate = new Date();
 		$.post("https://torrid-heat-2114.firebaseio.com/contactMe.json",
 			JSON.stringify({
 				name:$(".contact-name").val(),
 				email:$(".contact-email").val(),
 				subject:$(".contact-subject").val(),
 				message:$(".contact-message").val(),
+                date: postDate,
 			})
 			
 			);
