@@ -350,10 +350,9 @@ footer{
 }
 .title-all{
   font-family: Avenir;
-  font-size: 40px;
+  font-size: 37px;
   color: #fff;
   text-align: center;
-  font-size: 30px;
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -385,10 +384,11 @@ footer{
 }
 @media screen and (max-width: 500px){
   .grid-pad-whatIdo{
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
   .grid-pad-portfolio{
-    padding-top: 60px;
+    padding-top: 30px;
   }
   .name{
     font-size: 35px;
