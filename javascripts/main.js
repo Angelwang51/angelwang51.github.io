@@ -20,4 +20,40 @@ $(document).ready(function(){
 }
 
     setInterval(blinker, 1000);
+
+    $('#neeyer').click(function(){
+    	$('.slide-neeyer').show();
+    });
+    $('.overlay-close').click(function(){
+    	$('.slide-neeyer').hide();
+    });
+       $('#fireblog').click(function(){
+    	$('.slide-fireblog').show();
+    });
+    $('.overlay-close').click(function(){
+    	$('.slide-fireblog').hide();
+    });
+       $('#somekolors').click(function(){
+    	$('.slide-somekolors').show();
+    });
+    $('.overlay-close').click(function(){
+    	$('.slide-somekolors').hide();
+    });
+
+      $('#rreader').click(function(){
+        $('.slide-rreader').show();
+    });
+    $('.overlay-close').click(function(){
+        $('.slide-rreader').hide();
+    });
+
+    $('#reactblog').click(function(){
+        $('.slide-reactblog').show();
+    });
+    $('.overlay-close').click(function(){
+        $('.slide-reactblog').hide();
+    });
+
+
 });
+

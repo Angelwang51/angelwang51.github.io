@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat|Marck+Script|Bad+Script|Damion|Gilda+Display' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href='Simple-Grid/simplegrid.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="javascripts/main.js"></script>
@@ -21,196 +22,316 @@
   </head>
 
   <body>
-
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-  
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+    <!--fire blog-->
+    <div id='fullscreen-work-slide' class='slide-fireblog'>
+      <div class='overlay-content'>
+        <div class='slide-header-fireblog'>
+          <div class='desc-neeyer'>
+            <h1>Fire Blog</h1>
+            <h4>A blog based on AngularJS and Firebase</h4>
+            <a href="https://frblg.firebaseapp.com/#/article" target='_blank'><img src="images/button.png"></a>
+          </div>
+        </div>
+        <button type="button" class="overlay-close">Close</button>
+        <div class='grid'>
+          <div class='col-1-1'><img id='img-item' src="images/fireblog/fireblog.png"></div>
+        </div>
+        <div class='grid project-intro'>
+          <div class='col-1-1 intro-content'>
+            <h4>A blog based on angular.js and firebase. The theme of the blog is a pure HTML&CSS responsive grid style. User can also customize their own blog style. I used Markdown as an text editor. The blog will generate the preview at the same time when the user edits markdown. Fireblog is SPA (single page application) built with AngularJS and Foundation responsive font-end framework. </h4>
+          </div>
+          <h3>
+           <strong> Responsiblities:</strong>
+          </h3>
+          <ul>
+            <li>Development</li>
+            <li>UI/UX design</li>
+            <li>Responsive design</li>
+            <li>Mobile design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--somekolors-->
+    <div id='fullscreen-work-slide' class='slide-somekolors'>
+      <div class='overlay-content'>
+        <div class='desc-neeyer'>
+          <h1>SomeKolors</h1>
+          <h4>A Responsive WordPress Theme Redesign</h4>
+          <a href="http://www.somekolors.com/" target='_blank'><img src="images/button.png"></a>
+        </div>
+        <button type="button" class="overlay-close">Close</button>
+        <div class='grid'>
+          <div class='col-1-1'><img id='img-item' src="images/somekolors/somekolors.png"></div>
+        </div>
+        <div class='grid project-intro'>
+          <div class='col-1-1 intro-content'>
+            <h4>An e-commerce website selling handmade gold and silver jewelry. I developed and redesigned the website based on their existing wordpress theme. I made the theme fully responsive. I implemented the product image preview on hover and the wish list feature. I also did code refactoring for the front end part. </h4>
+          </div>
+          <h3>
+           <strong> Responsiblities:</strong>
+          </h3>
+          <ul>
+            <li>Development</li>
+            <li>UI/UX design</li>
+            <li>Responsive design</li>
+            <li>Mobile design</li>
+          </ul>
+       </div>
+      </div>
+    </div>
+    <!--rreader-->
+    <div id='fullscreen-work-slide' class='slide-rreader'>
+      <div class='overlay-content'>
+        <div class='desc-neeyer'>
+          <h1>Rreader</h1>
+          <a href="http://rreader.sinaapp.com/" target='_blank'><img src="images/button.png"></a>
+        </div>
+        <button type="button" class="overlay-close">Close</button>
+        <div class='grid grid-neeyer-pad'>
+          <div class='col-1-2 mobile-col-1-1'><img id='img-item' src="images/rreader/home-mock.png"></div>
+          <div class='col-1-2 mobile-col-1-1'><img id='img-item' src="images/rreader/reader-mock.png"></div>
+        </div>
+          <div class='grid grid-neeyer-pad'>  
+          <div class='col-1-1'><img id='img-item' src="images/rreader/rreader1.gif"></div>
+        </div>
+        <div class='grid project-intro'>
+          <div class='col-1-1 intro-content'>
+            <h4>A reading app for Chinese and I worked remotely with a group of talented developers in China. This app can help people improve their reading efficiency and make them focus on the content. You can paste any reading materials and adjust the reading speed while reading. </h4>
+          </div class='col-1-1'>
+          <h3>
+           <strong> Responsiblities:</strong>
+          </h3>
+          <ul>
+            <li>Development</li>
+            <li>UI/UX design</li>
+            <li>Responsive design</li>
+            <li>Mobile design</li>
+          </ul>
+       </div>
+      </div>
+    </div>
+    <!--Neeyer-->
+    <div id='fullscreen-work-slide' class='slide-neeyer'>
+      <div class='overlay-content'>
+        <button type="button" class="overlay-close">Close</button>
+        <div class='desc-neeyer'>
+          <h1>Neeyer</h1>
+          <h4>A Free On-demand Private Ride App</h4>
+        </div>
+        <div class='grid grid-neeyer-pad'>
+          <div class='col-1-3 mobile-col-1-2'>
+            <img id='img-item'src="images/neeyer/mockup/logo-mock.png">
+          </div>
+          <div class='col-1-3 mobile-col-1-2'>
+            <img id='img-item' src="images/neeyer/mockup/login-mock.png">
+          </div>
+          <div class='col-1-3 mobile-col-1-2'>
+            <img id='img-item' src="images/neeyer/mockup/needRide-mock.png">
+          </div>
+          <div class='col-1-3 mobile-col-1-2'>
+            <img id='img-item' src="images/neeyer/mockup/location-mock.png">
+          </div>
+          <div class='col-1-3 mobile-col-1-2'>
+            <img id='img-item' src="images/neeyer/mockup/driverList-mock.png">
+          </div>
+        </div>
+        <div class='grid project-intro'>
+          <div class='col-1-1 intro-content'>
+            <h4>A free on-demand ride iPhone App. It is also a location-based online social platform. You can not only share ride with people and save money but also meet people around you. All you need to do it send out the request and the app will search the drivers around you. it gives you an opportunity to meet people and keep in touch with your favorite drivers or passengers. I worked remotely with a team of talented developers in Dallas. I helped them developed and designed the mobile landing pages. </h4>
+          </div>
+          <h3>
+           <strong> Responsiblities:</strong>
+          </h3>
+          <ul>
+          <li>UI/UX design</li>
+          <li>Responsive design</li>
+          <li>Mobile design</li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    <!--react blog-->
+    <div id='fullscreen-work-slide' class='slide-reactblog'>
+      <div class='overlay-content'>
+        <div class='desc-neeyer'>
+          <h1>React Blog</h1>
+          
+        </div>
+        <button type="button" class="overlay-close">Close</button>
+        <div class='grid'>
+          <div class='col-1-1'><img id='img-item' src="images/reactblog/reactblog.png"></div>
+        </div>
+        <div class='grid project-intro'>
+          <div class='col-1-1 intro-content'>
+            <h4>A blog based on ReactJS and Firebase. It is a medium-like blog. I used medium-like image and text editor in this web app.  It keeps text and image simple and clean. I used react in this app because the componentized UI code is very maintainable and it works great for teams. 
+            I used Stylus as my CSS processor because I wanted to try it out.</h4>
+          </div class='col-1-1'>
+          <h3>
+           <strong> Responsiblities:</strong>
+          </h3>
+          <ul>
+            <li>Development</li>
+            <li>UI/UX design</li>
+            <li>Responsive design</li>
+            <li>Mobile design</li>
+          </ul>
+       </div>
+      </div>
+    </div>
+    <!--navbar-->           
+    <div class='background-content'>
+      <nav class="navbar navbar-inverse navbar-fixed-top navbar-scroll"> 
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="#home"><img src="images/name-logo3.png"></a>
+            <a class="navbar-brand" href="#home"><img src="images/logo/name-logo4s.png"></a>
+          </div>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#whatIdo">What I Do</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#aboutMe">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+           </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Home-->
+    <div class="bg-container" id="home">
+      <div class="fixed-bg bg-1">
+        <div class="grid intro">
+          <div class='col-1-1'>
+            <div class="name ">YUTING  WANG</div>
+          </div>
+          <div class='col-1-1'>  
+            <div class="title">Front End Developer and UI/UX Designer</div>
+          </div>
+          <div class='grid logo'>
+            <div class='col-1-1'>  
+              <div class='name-logo'><img src="images/logo/name-logo4s.png"></div>
+            </div>
+          </div>
+        </div> 
+      </div> 
     </div>
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#whatIdo">What I Do</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#aboutMe">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-     </ul>
+    <!--whatIdo-->
+    <div class="scrolling-bg color-1" id="whatIdo">
+      <div class="whatIdo-title title-all">WHAT I DO</div>
+      <div class="grid">
+        <div class="col-1-4 mobile-col-1-2 grid-pad">
+          <img id='img-item-w'class="pen"src="images/1435960096_pen.png">
+          <div class="desc">UI Design</div>
+        </div>
+        <div class="col-1-4 mobile-col-1-2 grid-pad">
+          <img id='img-item-w' class="coding"src="images/gif/coding.gif">
+          <div class="desc">Web Development</div>
+        </div>
+        <div class="col-1-4 mobile-col-1-2 grid-pad">
+          <img id='img-item-w' class="responsive"src="images/gif/responsive.gif">
+          <div class="desc">Responsive Design</div>
+        </div>
+        <div class="col-1-4 mobile-col-1-2 grid-pad">
+          <img id='img-item-w' src="images/gif/experience.gif">
+          <div class="desc">User Experience</div>
+        </div>
+      </div>
+    </div>      
+    <!--Portifolio-->
+    <div class="bg-container" id="portfolio">
+      <div class="fixed-bg bg-2">
+        <div class="portfolio-title title-all">MY WORK</div>
+        <div class="grid">
+          <div id='fireblog' class="col-1-3 mobile-col-1-2">
+            <a><img id='img-item-p' src="images/fireblog.jpg"></a>
+          </div>
+          <div id='somekolors'class="col-1-3 mobile-col-1-2">
+            <a><img id='img-item-p' src="images/somekolors.jpg"></a>
+          </div>
+          <div id='rreader'class="col-1-3 mobile-col-1-2">
+            <a><img id='img-item-p' src="images/rreader.jpg"></a>
+          </div>
+          <div id='neeyer' class="col-1-3 mobile-col-1-2">
+            <a ><img id='img-item-p' src="images/neeyer.jpg"></a>
+          </div>
+          <div id='reactblog'class="col-1-3 mobile-col-1-2">
+            <a><img id='img-item-p' src="images/reactblog.jpg"></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-
-  <div class="bg-container" id="home">
-    <div class="fixed-bg bg-1">
-    <div class="mask"></div>
-    <div class="intro-container slideUp">
-      <div id="intro">
-      <div class="name ">YUTING  WANG</div>
-      <div class="title-border"><span></span></div>
-      <div class="title">Front End Developer and UI/UX Designer</div>
-      <div class="spin-logo"><img src="images/name-logo3.png"></div>
+    <!--About-->
+    <div class="fixed-bg bg-4" id="aboutMe">
+      <div class="aboutMe-title title-all">ABOUT</div>
+      <div class='grid' id='aboutMe-info'>
+        <div class='col-1-2 mobile-col-1-1 aboutMe-item'>
+          <h3>Hi, I'm Yuting!</h3> 
+        </div>
+      </div>
+      <div class='grid' id='aboutMe-info'>
+        <div class='col-1-2 mobile-col-1-1 aboutMe-item'>
+          <p><span class='font-style'>I</span>’ve got three majors and worked through different industries and jobs until I finally realized that I’m way too interested in coding and designing. </p>
+          <p>I started my professional career as a Business Analyst at a bank 4 years ago.  I was assigned occasionally to a project with IT department.  It soon became apparent that I really enjoyed spending time with the developers and understanding how they do their magic. I started trying it myself and I naturally learned some skills of front end development and design. I started to enjoy people call me “nerd”.</p>
+        </div>
+        <div class='col-1-2 mobile-col-1-1 aboutMe-item'>
+          <p><span class='font-style'>After</span> I went back to school to study IT, I embarked on a freelance career which gave me the freedom to work on all sorts of projects with different kinds of business – from online jewelry store, to reading application and blog.</p>
+          <p>I strive in busy environments and on interesting projects. I want to be involved in projects that I can be proud of, join an amazing team, and advance my design and development career. Take some time to look at my work, credentials, and if you're interested in helping me make this happen, let's get in touch.</p>
+        </div>
+      </div>
+      <div class='grid'>
+        <div class="col-1-2 cv-github aboutMe-item">
+          <a href="https://drive.google.com/file/d/0Bx1MsIf02z4LajRzbnVmVTZEWTA/view"><img src="images/1435886895_file1.png"></a>
+          <a href="https://github.com/Angelwang51" target="_blank"><img src="images/1435886916_github_alt.png"></a>
+        </div>
       </div>
     </div> 
-    
-    
-    </div> 
-    
-</div>
-<div class="scrolling-bg color-1" id="whatIdo">
-    <div class="whatIdo-title title-all">WHAT I DO</div>
-    <div class="whatIdo-container">
-
-      <div class="disc">
-      <div class="whatIdo-disc">
-      <img class="pen"src="images/1435960096_pen.png">
-      </div>
-      <div class="desc">UI Design</div>
-      </div>
-      <div class="disc">
-      <div class="whatIdo-disc">
-      <img class="coding"src="images/1435960426_361.png">
-      <div class="focus-code-container"><img class="focus-code"src="images/focus1.png"></div>
-      </div>
-      <div class="desc">Web Development</div>
-      </div>
-      <div class="disc">
-      <div class="whatIdo-disc">
-      <img class="responsive"src="images/1435960347_responsive.png">
-      </div>
-      <div class="desc">Responsive Design</div>
-      </div>
-      <div class="disc">
-      <div class="whatIdo-disc">
-      <img src="images/1435960407_a-happy.png">
-      </div>
-      <div class="desc">User Experience</div>
-      </div>
-    </div>
-</div>      
- 
-<!--
-<div class="bg-container">
-  <div class="fixed-bg bg-2">
-    <div class="portfolio-container col-xs-8">
-      <div class="img-box col-xs-4">
-        <a href="https://frblg.firebaseapp.com/#/article"><img src="images/fireblog.jpg"></a>
-      </div>
-      <div class="img-box col-xs-4">  
-        <a href="http://www.somekolors.com/"><img src="images/somekolors.jpg"></a>
-      </div>
-      <div class="img-box col-xs-4"> 
-        <a href="http://rreader.sinaapp.com/"><img src="images/rreader.jpg"></a>
-      </div>  
-      
-    </div>
-  </div>
-  
-</div>
--->
-<div class="bg-container" id="portfolio">
-  <div class="fixed-bg bg-2">
-    <div class="portfolio-container">
-      <div class="portfolio-title title-all">MY WORK</div>
-      <div class="wrap">
-      <div class="flex-container">
-        <div class="flex-item">
-          <a href="https://frblg.firebaseapp.com/#/article" target="_blank"><img src="images/fireblog.jpg"></a>
-          
+    <!--Contact-->
+    <div class="bg-container" id="contact">
+      <div class="fixed-bg bg-3">
+        <div class="contactForm-container">
+          <div id="contactForm">
+            <h1 class="contactMe">Contact Me</h1>
+            <form class="form">
+              <input type="text" class="contact-name" placeholder="Name (required)" required/><br>
+              <input type="email" class="contact-email" placeholder="Email (required)" required/><br>
+              <input type="text" class="contact-subject" placeholder="Subject"/><br>
+              <textarea class="contact-message" placeholder="Message"></textarea>
+              <button type="button" class="btn btn-success">SEND IT</button>
+            </form>
+            <div class="followMe">
+              <div class="followMe-title">Follow Me</div>
+              <div class="socialMedia">
+                <a href="https://www.linkedin.com/pub/yuting-wang/3b/505/40a" target="_blank"><img src="images/1435815745_LinkedIn.png"></a>
+                <a href="https://dribbble.com/yutingwang" target="_blank"><img src="images/1435815732_Dribbble.png"></a>
+                <a href="https://twitter.com/YutWang" target="_blank"><img src="images/1435815792_Twitter.png"></a>
+                <a href="https://www.facebook.com/angel.wang.923724" target="_blank"><img src="images/1435815769_Facebook.png"></a>
+                <span class="myEmail">yuting.wang3@gmail.com</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <span class="item-space"></span>
-        <div class="flex-item">
-          <a href="http://www.somekolors.com/" target="_blank"><img src="images/somekolors.jpg"></a>
-          
+        <!--display when max-width 760px and landscape-->
+        <div class="followMe2">
+          <div class="followMe-title2">Contact Me</div>
+          <div class="socialMedia2">
+            <a href="https://www.linkedin.com/pub/yuting-wang/3b/505/40a" target="_blank"><img src="images/1435815745_LinkedIn.png"></a>
+            <a href="https://dribbble.com/yutingwang" target="_blank"><img src="images/1435815732_Dribbble.png"></a>
+            <a href="https://twitter.com/YutWang" target="_blank"><img src="images/1435815792_Twitter.png"></a>
+            <a href="https://www.facebook.com/angel.wang.923724" target="_blank"><img src="images/1435815769_Facebook.png"></a>
+            <div class="myEmail2">Email: yuting.wang3@gmail.com</div>
+          </div>
         </div>
-        <span class="item-space"></span>
-        <div class="flex-item">
-          <a href="http://rreader.sinaapp.com/" target="_blank"><img src="images/rreader.jpg"></a>
-          
-        </div>
-      </div>
-      </div>
+      </div> 
     </div>
-  </div>
-  
-</div>
-
-
-
-<div class="fixed-bg bg-4" id="aboutMe">
-  
-     <div class="aboutMe-info-container">
-     <div class="aboutMe-title title-all">ABOUT</div>
-      <div id="aboutMe-info">
-        <p>I’ve got three majors and worked through different industries and jobs until I finally realized that I’m way too interested in coding and designing. </p>
-<p>I started my professional career as a Business Analyst at a bank 4 years ago.  I was assigned occasionally to a project with IT department.  It soon became apparent that I really enjoyed spending time with the developers and understanding how they do their magic. I started trying it myself and I naturally learned some skills of front end development and design. I started to enjoy people call me “nerd”.</p>
-<p>After I went back to school to study IT, I embarked on a freelance career which gave me the freedom to work on all sorts of projects with different kinds of business – from online jewelry store, to reading application and blog.</p>
-<p>I strive in busy environments and on interesting projects. I want to be involved in projects that I can be proud of, join an amazing team, and advance my design and development career. Take some time to look at my work, credentials, and if you're interested in helping me make this happen, let's get in touch.</p>
-
-      </div>
-      <div class="cv-github">
-        <a href=""><img src="images/1435886895_file1.png"></a>
-        <a href="https://github.com/Angelwang51" target="_blank"><img src="images/1435886916_github_alt.png"></a>
-      </div>
+    <footer>
+      <div class="copyright">© Yuting Wang 2015</div>
+    </footer>
     </div>
-  </div> 
-
-
-<div class="bg-container" id="contact">
-  <div class="fixed-bg bg-3">
-    
-    
-    <div class="contactForm-container">
-    <div id="contactForm">
-    <h1 class="contactMe">Contact Me</h1>
-    <form class="form">
-    
-      <input type="text" class="contact-name" placeholder="Name (required)" required/><br>
-      <input type="email" class="contact-email" placeholder="Email (required)" required/><br>
-      <input type="text" class="contact-subject" placeholder="Subject"/><br>
-      <textarea class="contact-message" placeholder="Message"></textarea>
-      <button type="button" class="btn btn-success">SEND IT</button>
-    </form>
-    <div class="followMe">
-      <div class="followMe-title">Follow Me</div>
-      <div class="socialMedia">
-        <a href="https://www.linkedin.com/pub/yuting-wang/3b/505/40a" target="_blank"><img src="images/1435815745_LinkedIn.png"></a>
-        <a href="https://dribbble.com/yutingwang" target="_blank"><img src="images/1435815732_Dribbble.png"></a>
-        <a href="https://twitter.com/YutWang" target="_blank"><img src="images/1435815792_Twitter.png"></a>
-        <a href="https://www.facebook.com/angel.wang.923724" target="_blank"><img src="images/1435815769_Facebook.png"></a>
-        <span class="myEmail">yuting.wang3@gmail.com</span>
-      </div>
-    </div>
-    </div>
-    </div>
-    <!--display when max-width 760px and landscape-->
-    <div class="followMe2">
-      <div class="followMe-title2">Contact Me</div>
-      <div class="socialMedia2">
-        <a href="https://www.linkedin.com/pub/yuting-wang/3b/505/40a" target="_blank"><img src="images/1435815745_LinkedIn.png"></a>
-        <a href="https://dribbble.com/yutingwang" target="_blank"><img src="images/1435815732_Dribbble.png"></a>
-        <a href="https://twitter.com/YutWang" target="_blank"><img src="images/1435815792_Twitter.png"></a>
-        <a href="https://www.facebook.com/angel.wang.923724" target="_blank"><img src="images/1435815769_Facebook.png"></a>
-        <div class="myEmail2">Email: yuting.wang3@gmail.com</div>
-      </div>
-    </div>
-    
-    
-   
-  </div> 
-
-</div>
-<footer>
-   <div class="copyright">© Yuting Wang 2015</div>
-</footer>
-
-   
-    
   </body>
-  
 </html>
