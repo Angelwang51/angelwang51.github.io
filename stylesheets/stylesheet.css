@@ -404,22 +404,26 @@ footer{
     font-size: 1em;
   }
   #contactForm{
-    max-width: 370px;
+    max-width: 350px;
+   
   }
+  .contactForm-container{
+  padding-top: 3em;
+}
   .form input{
     max-width: 270px;
-    margin-left: 53px;
+    margin-left: 40px;
   }
 
   .contact-message{
 
     max-width: 270px;
-    margin-left: 53px;
+    margin-left: 40px;
     
   }
   .btn{
     max-width: 270px;
-    margin-left: 53px; 
+    margin-left: 40px; 
   }
 }
 
