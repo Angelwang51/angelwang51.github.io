@@ -100,20 +100,20 @@ position: absolute;
 }
 .intro{
   padding-top: 300px;
+  opacity: 0.9;
 }
 .name{
-  font-size:40px;
+  font-size:50px;
   font-weight: 400; 
   font-family:Avenir;
   color: #fff;
   text-align: center;
 }
 .title{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: #fff;
   font-family: Avenir;
-  
   padding-top: 50px;
   padding-bottom: 90px;
   text-align: center;
@@ -123,20 +123,8 @@ position: absolute;
 
 .name-logo{
   text-align: center;
-  
 }
-.name-logo img{
 
-  
-}
-.whatIdo-title{
-  font-family: Avenir;
-  font-size: 40px;
-  color: #fff;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 .desc{
   font-family: Avenir;
   font-size: 23px;
@@ -145,19 +133,17 @@ position: absolute;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.grid-pad-whatIdo{
+  text-align: center;
+  padding-top: 70px;
+  padding-left: 57px;
+  padding-right: 30px;
+}
 .color-1{
   background-color:#e86d5e;
   background: #e86d5e url("../images/bg-shell3.png") no-repeat center bottom;
 }
-/*Portfolio*/
-.portfolio-title{
-  font-family: Avenir;
-  font-size: 40px;
-  color: #fff;
-  text-align: center;
-  padding-top:100px;
-  padding-bottom: 100px;
-}
+
 /*grid image*/
 #img-item{
   width: 100%;
@@ -171,10 +157,6 @@ position: absolute;
 #img-item-p:hover {
    cursor: pointer;
    opacity: 1;
-}
-#img-item-w{
-  width:100%;
-  height:100%;
 }
 #img-item-neeyer{
   width:50%;
@@ -201,6 +183,12 @@ position: absolute;
 .background-content{
   height: 100%;
   overflow: auto;
+}
+/*portfolio*/
+.grid-pad-portfolio{
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px; 
 }
 /*popup page cross*/  
 .overlay-close {
@@ -253,14 +241,6 @@ position: absolute;
 }
 .intro-content h4{
   font-size: 16px;
-}
-.aboutMe-title{
-  font-family: Avenir;
-  font-size: 40px;
-  color: #fff;
-  text-align: center;
-  padding-top:100px;
-  padding-bottom: 100px;
 }
 
 #aboutMe-info{
@@ -369,11 +349,21 @@ footer{
   margin-left: 60px;
 }
 .title-all{
+  font-family: Avenir;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
   font-size: 30px;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 776px){
+  .name{
+    font-size: 40px;
+  }
+  .title{
+    font-size: 25px;
+  }
   .desc{
     font-size: 15px;
   }
@@ -394,7 +384,12 @@ footer{
   }
 }
 @media screen and (max-width: 500px){
-
+  .name{
+    font-size: 35px;
+  }
+  .title{
+    font-size: 20px;
+  }
   .desc{
     display: none;
   }
