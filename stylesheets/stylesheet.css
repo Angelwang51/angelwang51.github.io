@@ -4,7 +4,7 @@
     font-weight: bold;
 }
 
-body, html, .bg-container {
+body, html{
   /* important */
   height: 100%;
   width: 100%;
@@ -41,20 +41,20 @@ position: absolute;
   background-position: center center;
 }
 .fixed-bg.bg-1 {
-  background-image: url(../images/shutterstock_205553143sm.jpg);
+  background-image: url(../images/tree.jpg);
+  min-height: 950px;
 }
 .fixed-bg.bg-2 {
   background-image: url(../images/photo-1422349829867-7587357f2b581sm.jpg);
+  min-height: 850px;
 }
 .fixed-bg.bg-3 {
   background-image: url(../images/forest3.jpg);
+  min-height: 850px;
 }
 .fixed-bg.bg-4{
   background-image: url(../images/photo-bg3.jpg);
-  min-height:80%;
-}
-.scrolling-bg {
-  min-height: 80%;
+  min-height:850px;
 }
 .container-fluid{
   background-color:rgba(0,0,0,0.5);
@@ -115,7 +115,7 @@ position: absolute;
   color: #fff;
   font-family: Avenir;
   padding-top: 50px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   text-align: center;
   overflow: hidden;
   letter-spacing: 1px;
@@ -124,7 +124,10 @@ position: absolute;
 .name-logo{
   text-align: center;
 }
-
+/*whatIdo*/
+.title-whatIdo{
+  margin-top: 70px;
+}
 .desc{
   font-family: Avenir;
   font-size: 23px;
@@ -133,11 +136,17 @@ position: absolute;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+#whatIdo{
+  min-height: 800px;
+  box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  border-top: 5px solid #8f181e;
+  border-bottom: 5px solid #8f181e;
+}
 .grid-pad-whatIdo{
   text-align: center;
-  padding-top: 70px;
-  padding-left: 57px;
-  padding-right: 30px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 100px;
 }
 .color-1{
   background-color:#e86d5e;
@@ -185,11 +194,19 @@ position: absolute;
   overflow: auto;
 }
 /*portfolio*/
+
+.grid-portfolio{
+  padding-bottom: 30px;
+}
 .grid-pad-portfolio{
-  padding-top: 40px;
-  padding-left: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
   padding-right: 40px; 
 }
+.grid-pad-portfolio img{
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
 /*popup page cross*/  
 .overlay-close {
   padding: 0;
@@ -232,6 +249,14 @@ position: absolute;
   line-height: 1.5;
 }
 /*about me*/
+#aboutMe{
+  border-top: 5px solid #1e2c39;
+  border-bottom: 5px solid #1e2c39;
+  -webkit-box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  
+}
 .aboutMe-item{
   padding-left:40px;
   padding-right: 40px;
@@ -312,6 +337,9 @@ position: absolute;
   margin-top: 20px;
   font-size: 25px;
 }
+.followMe{
+  padding-top: 10px;
+}
 .socialMedia img{
   max-width:40px;
   max-height:40px;
@@ -323,12 +351,6 @@ position: absolute;
 }
 .socialMedia a:hover{
   background-color: ##2EFE2E;
-}
-.followMe-title{
-  font-size: 20px;
-  color:#000;
-  margin-top: 40px;
-  margin-left: 45px;
 }
 .myEmail{
   font-family: Avenir;
@@ -346,7 +368,7 @@ footer{
 }
 .copyright{
   padding: 23px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 .title-all{
   font-family: Avenir;
@@ -354,14 +376,18 @@ footer{
   color: #fff;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
+
 @media screen and (max-width: 776px){
   .name{
     font-size: 40px;
   }
   .title{
     font-size: 25px;
+  }
+  .title-whatIdo{
+    margin-top: 0;
   }
   .desc{
     font-size: 15px;
@@ -383,24 +409,59 @@ footer{
   }
 }
 @media screen and (max-width: 500px){
+  .overlay-close{
+    height: 30px;
+    width: 30px;
+  }
+  .navbar{
+    display:none;
+  }
+  .fixed-bg.bg-1{
+    min-height: 500px;
+    background-image: url(../images/tree-phone.jpg);
+  }
   .intro{
-    padding-top: 200px;
-  }
-  .grid-pad-whatIdo{
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .grid-pad-portfolio{
-    padding-top: 30px;
-  }
-  .name{
-    font-size: 35px;
+    padding-top: 100px;
   }
   .title{
-    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .title-all{
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  #whatIdo{
+    max-height: 400px;
+  }
+  .title-whatIdo{
+    margin-top: 0;
+  }
+  .grid-whatIdo{
+    height: 100%;
+  }
+  .grid-pad-whatIdo{
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .fixed-bg.bg-2{
+    background: black;
+  }
+  #portfolio{
+    max-height: 700px;
+  }
+  .grid-pad-portfolio{
+    padding-top: 20px;
+  }
+  .name{
+    font-size: 32px;
+  }
+  .title{
+    font-size: 18px;
   }
   .desc{
-    display: none;
+    font-size: 16px;
   }
 
   #aboutMe-info{

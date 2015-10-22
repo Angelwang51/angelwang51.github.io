@@ -200,6 +200,16 @@ body {
 		padding-bottom: 0;
 	}
 
+	[class*='sm-col-']{
+		float: left;
+		margin: 0 0 10px;
+		padding-left: 20px;
+		padding-right: 40px; /* column-space */
+		padding-bottom: 0;
+	}
+	.sm-col-1-2{
+		width: 50%;
+	}
 	.mobile-col-1-1 {
 		width: 100%;
 	}
