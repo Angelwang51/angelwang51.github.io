@@ -418,8 +418,8 @@ footer{
   }
   .fixed-bg.bg-1{
     min-height: 500px;
-    background-image: url(../images/tree-phone.jpg);
   }
+
   .intro{
     padding-top: 100px;
   }
@@ -433,7 +433,7 @@ footer{
     padding-bottom: 20px;
   }
   #whatIdo{
-    max-height: 400px;
+    min-height: 500px;
   }
   .title-whatIdo{
     margin-top: 0;
@@ -449,7 +449,7 @@ footer{
     background: black;
   }
   #portfolio{
-    max-height: 700px;
+    min-height: 650px;
   }
   .grid-pad-portfolio{
     padding-top: 20px;
