@@ -22,9 +22,7 @@ body, html{
 .loading-container{
   width:180px;
   padding-top:380px;
-  
   text-align: center;
- 
 }
 .loading-text{
   text-align: center;
@@ -539,6 +537,9 @@ footer{
   }
 }
 @media screen and (max-width: 500px){
+  .loading-container{
+    padding-top: 200px;
+  }
   .overlay-close{
     height: 30px;
     width: 30px;
