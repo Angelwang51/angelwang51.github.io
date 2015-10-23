@@ -12,6 +12,135 @@ body, html{
   font-family: Montserrat, sans-serif;
 
 }
+/*loading page*/
+.loading-page{
+  background-color: #DC554F;
+  width: 100%;
+  height: 100%;
+  z-index: 1032;
+}
+.loading-container{
+  width:180px;
+  padding-top:380px;
+  
+  text-align: center;
+ 
+}
+.loading-text{
+  text-align: center;
+}
+.loading-text h1{
+  font-family: 'Lato';
+  color:#fff;
+  text-transform: uppercase;
+  font-size:1em;
+  letter-spacing:1.5px;
+  text-align:center;
+  margin-top:20px;
+  -webkit-animation: fade 2s infinite;
+  -moz-animation: fade 2s infinite;
+}
+.stick { 
+ width: 30px;
+ height:3px;
+ background:#fff;
+ display:inline-block;
+ margin-left:-8px;
+  
+}
+
+.stick:nth-child(n) {  
+  transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg); /* Safari and Chrome */
+   -moz-transform:rotate(30deg);
+   -webkit-animation: fall 2s infinite;
+   -moz-animation: fall 2s infinite;
+
+}
+.stick:nth-child(2n) {  
+   transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg); /* Safari and Chrome */
+  -moz-transform:rotate(-30deg);
+  -webkit-animation: rise 2s infinite;
+  -moz-animation: rise 2s infinite;
+
+}
+@-webkit-keyframes rise {
+  50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg); 
+    ;}
+}
+@-moz-keyframes rise {
+ 50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+   -moz-transform:rotate(30deg); 
+}
+}
+@-o-keyframes rise {
+  50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg); 
+}
+@keyframes rise {
+  50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg); 
+}
+}}
+
+@-webkit-keyframes fall {
+  50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(30deg); 
+}
+}
+@-moz-keyframes fall {
+ 50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg); 
+ 
+ }
+}
+@-o-keyframes fall {
+  50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+   -moz-transform:rotate(30deg); 
+
+  }
+@keyframes fall {
+  50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(30deg); 
+
+  }
+}}
+
+@-webkit-keyframes fade {
+  50%{opacity:0.5}
+  100%{opacity:1}
+  ;}
+@-moz-keyframes fade {
+ 50%{opacity:0.5}
+  100%{opacity:1}
+}
+@-o-keyframes fade {
+   50%{opacity:0.5}
+  100%{opacity:1}
+@keyframes fade {
+   50%{opacity:0.5}
+  100%{opacity:1}
+}}
 /*logo*/         
 .navbar-brand img{
   width: 25px;
@@ -283,14 +412,15 @@ position: absolute;
 .followMe2{
   display: none;
 }
-.contactForm-container{
-  padding-top: 7em;
-}
+
 #contactForm{
   background: rgba(255,255,255,0.3);
   max-height: 700px;
   max-width: 600px;
   margin: 0 auto;
+}
+.form{
+  padding-top: 60px;
 }
 .form input{
   background-color: #fff;

@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    /*loading page*/
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".loading-page").fadeOut("slow");;
+    });
+    /*post contact info*/
 	$(".btn").click(function(){
         var postDate = new Date();
 		$.post("https://torrid-heat-2114.firebaseio.com/contactMe.json",
@@ -16,11 +22,7 @@ $(document).ready(function(){
 			$(".contact-subject").val("");
 			$(".contact-message").val("");
 	});
-	function blinker() {
-    $('.focus-code').fadeOut(500);
-    $('.focus-code').fadeIn(500);
-}
-
+    /*open and close popup project intro page*/
     setInterval(blinker, 1000);
 
     $('#neeyer').click(function(){
