@@ -2,7 +2,7 @@ $(document).ready(function(){
     /*loading page*/
     $(window).load(function() {
         // Animate loader off screen
-        $(".loading-page").fadeOut("slow");;
+        $(".loading-page").hide();;
     });
     /*post contact info*/
 	$(".btn").click(function(){
@@ -23,7 +23,6 @@ $(document).ready(function(){
 			$(".contact-message").val("");
 	});
     /*open and close popup project intro page*/
-    setInterval(blinker, 1000);
 
     $('#neeyer').click(function(){
     	$('.slide-neeyer').show();
