@@ -226,23 +226,23 @@ position: absolute;
     }
 }
 .intro{
-  padding-top: 300px;
+  padding-top: 150px;
   opacity: 0.9;
 }
 .name{
   font-size:50px;
-  font-weight: 400; 
+  font-weight: 80; 
   font-family:Avenir;
   color: #fff;
   text-align: center;
+  line-height: 0.5;
 }
 .title{
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
   color: #fff;
   font-family: Avenir;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   text-align: center;
   overflow: hidden;
   letter-spacing: 1px;
@@ -250,6 +250,7 @@ position: absolute;
 
 .name-logo{
   text-align: center;
+  padding-bottom: 50px;
 }
 /*whatIdo*/
 .title-whatIdo{
@@ -512,7 +513,7 @@ footer{
     font-size: 40px;
   }
   .title{
-    font-size: 25px;
+    font-size: 18px;
   }
   .title-whatIdo{
     margin-top: 0;
@@ -552,11 +553,10 @@ footer{
   }
 
   .intro{
-    padding-top: 100px;
+    padding-top: 30px;
   }
   .title{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   .title-all{
     font-size: 30px;
@@ -566,8 +566,8 @@ footer{
   #whatIdo{
     min-height: 500px;
   }
-  .title-whatIdo{
-    margin-top: 0;
+  .color-1{
+    background:#e86d5e;
   }
   .grid-whatIdo{
     height: 100%;
