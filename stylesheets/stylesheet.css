@@ -9,7 +9,7 @@ body, html{
   height: 100%;
   width: 100%;
   font-size: 100%;
-  font-family: Montserrat, sans-serif;
+  font-family: Avenir, sans-serif;
 
 }
 /*loading page*/
@@ -17,7 +17,7 @@ body, html{
   background-color: #DC554F;
   width: 100%;
   height: 100%;
-  z-index: 1031;
+  z-index: 1;
 }
 .loading-container{
   width:180px;
@@ -28,7 +28,7 @@ body, html{
   text-align: center;
 }
 .loading-text h1{
-  font-family: 'Lato';
+  font-family: Avenir;
   color:#fff;
   text-transform: uppercase;
   font-size:1em;
@@ -51,13 +51,13 @@ body, html{
   transform:rotate(30deg);
   -ms-transform:rotate(30deg); /* IE 9 */
   -webkit-transform:rotate(30deg); /* Safari and Chrome */
-   -moz-transform:rotate(30deg);
-   -webkit-animation: fall 2s infinite;
-   -moz-animation: fall 2s infinite;
+  -moz-transform:rotate(30deg);
+  -webkit-animation: fall 2s infinite;
+  -moz-animation: fall 2s infinite;
 
 }
 .stick:nth-child(2n) {  
-   transform:rotate(-30deg);
+  transform:rotate(-30deg);
   -ms-transform:rotate(-30deg); /* IE 9 */
   -webkit-transform:rotate(-30deg); /* Safari and Chrome */
   -moz-transform:rotate(-30deg);
@@ -112,7 +112,7 @@ body, html{
   50% { transform:rotate(-30deg);
   -ms-transform:rotate(-30deg); /* IE 9 */
   -webkit-transform:rotate(-30deg);
-   -moz-transform:rotate(30deg); 
+  -moz-transform:rotate(30deg); 
 
   }
 @keyframes fall {
@@ -139,24 +139,92 @@ body, html{
    50%{opacity:0.5}
   100%{opacity:1}
 }}
-/*logo*/         
-.navbar-brand img{
-  width: 25px;
-  height: 25px;
-  opacity: 0.5;
-
+/*full screen nav*/
+.trigger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: auto;
+  bottom: auto;
+  right: 30px;
+  z-index: 4;
+  cursor: pointer;
+  transition: top .1s ease-in-out;
 }
-.navbar{
+.menu-icon {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #F1F1F1;
+  margin: 0 0 5px 0;
+  transition: all .2s ease-in-out;
   position: absolute;
 }
-.navbar-inverse{
-position: absolute;
-} 
-.navbar-fixed-top{
-  position: absolute;
+.span1{
+  top: 0;
+  left: 0;
 }
-.navbar-scroll{
+.span2{
+  top: 10px;
+  left: 0;
+}
+.span3{
+  top: 20px;
+  left: 0;
+}
+.on{
+  top: 40px;
+}
+.on .span1{
+  transform: rotate(45deg);
+}
+.on .span2{
+  transform: rotate(-45deg);
+  top: 0;
+}
+.on .span3{
+  transform: rotate(45deg);
+  top: 0;
+}
+.fullscreen-menu {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+}
+.fullscreen-menu ul{
+  list-style-type: none;
+  padding: 0;
+  left: 0;
+  width: 350px;
+  text-align: center;
   position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
+.fullscreen-menu li{
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 55px;
+  padding: 10px 0;
+}
+.fullscreen-menu li a{
+  text-decoration: none;
+  color: white;
+}
+.fullscreen-menu li a:hover{
+  color: #e86d5e;
 }
 /*fixed background*/
 .fixed-bg {
@@ -183,39 +251,37 @@ position: absolute;
   background-image: url(../images/photo-bg3.jpg);
   min-height:850px;
 }
-.container-fluid{
-  background-color:rgba(0,0,0,0.5);
-}
+/*whatIdo animation*/
 .pen{
   -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
     
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
 }
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
 }
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
 }
 @keyframes spin {
     from {
@@ -225,13 +291,13 @@ position: absolute;
         transform:rotate(360deg);
     }
 }
+/*home page*/
 .intro{
   padding-top: 150px;
   opacity: 0.9;
 }
 .name{
-  font-size:50px;
-  font-weight: 80; 
+  font-size:40px; 
   font-family:Avenir;
   color: #fff;
   text-align: center;
@@ -247,7 +313,6 @@ position: absolute;
   overflow: hidden;
   letter-spacing: 1px;
 }
-
 .name-logo{
   text-align: center;
   padding-bottom: 50px;
@@ -280,7 +345,6 @@ position: absolute;
   background-color:#e86d5e;
   background: #e86d5e url("../images/bg-shell3.png") no-repeat center bottom;
 }
-
 /*grid image*/
 #img-item{
   width: 100%;
@@ -307,8 +371,24 @@ position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1032;
+  z-index: 5;
   display: none; 
+}
+/*popup page close cross*/  
+.overlay-close {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 35px;
+  top: 50px;
+  overflow: hidden;
+  border: none;
+  background: url(../images/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
 }
 /*make popup page scrollable*/
 .overlay-content {
@@ -335,22 +415,6 @@ position: absolute;
   border: 5px solid rgba(255, 255, 255, 0.3);
 }
 
-/*popup page cross*/  
-.overlay-close {
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 35px;
-  top: 50px;
-  overflow: hidden;
-  border: none;
-  background: url(../images/cross.png) no-repeat center center;
-  text-indent: 200%;
-  color: transparent;
-  outline: none;
-  z-index: 100;
-}
 .grid-neeyer-pad{
   padding-left: 70px;
   padding-right: 70px;
@@ -408,10 +472,6 @@ position: absolute;
   max-height:40px;
   margin-right: 40px;
 }
-.followMe2{
-  display: none;
-}
-
 #contactForm{
   background: rgba(255,255,255,0.3);
   max-height: 700px;
@@ -540,6 +600,9 @@ footer{
 @media screen and (max-width: 500px){
   .loading-container{
     padding-top: 200px;
+  }
+  .fullscreen-menu li{
+    font-size: 40px;
   }
   .overlay-close{
     height: 30px;

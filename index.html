@@ -4,12 +4,10 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Marck+Script|Bad+Script|Damion|Gilda+Display|Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' href='stylesheets/simplegrid.css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="javascripts/main.js"></script>
@@ -20,26 +18,41 @@
 
     <title>Yuting Wang|Front End Developer|UI/UX Designer</title>
   </head>
-
   <body>
-    <!--loading page-->
-    <div class='loading-page'>
-      <div class='grid'>
-        <div class="col-1-1 loading-container">
-
-              <div class="stick"></div>
-              <div class="stick"></div>
-              <div class="stick"></div>
-              <div class="stick"></div>
-              <div class="stick"></div>
-              <div class="stick"></div>
-            
-              <div class='loading-text'><h1>Loading...</h1></div>
-        
-       
+    <header>
+      <!--loading page-->
+      <div class='loading-page'>
+        <div class='grid'>
+          <div class="col-1-1 loading-container">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class='loading-text'><h1>Loading...</h1></div>
+          </div>
         </div>
       </div>
-    </div>  
+      <!--navbar-->           
+      <nav> 
+        <div class="trigger">
+          <span class='span1 menu-icon'></span>
+          <span class='span2 menu-icon'></span>
+          <span class='span3 menu-icon'></span>
+        </div>
+        <div class="fullscreen-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#whatIdo">What I Do</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--work slide-->  
     <!--fire blog-->
     <div id='fullscreen-work-slide' class='slide-fireblog'>
       <div class='overlay-content'>
@@ -198,31 +211,8 @@
        </div>
       </div>
     </div>
-    <!--navbar-->           
-    <div class='background-content'>
-      <nav class="navbar navbar-inverse navbar-fixed-top navbar-scroll"> 
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#home"><img src="images/logo/name-logo4s.png"></a>
-          </div>
-          <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#whatIdo">What I Do</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#aboutMe">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-           </ul>
-          </div>
-        </div>
-      </nav>
     <!--Home-->
+    <div class='background-content'>
     <div class="fixed-bg bg-1" id="home">
       
         <div class="grid intro">

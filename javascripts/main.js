@@ -4,6 +4,15 @@ $(document).ready(function(){
         // Animate loader off screen
         $(".loading-page").hide();;
     });
+    /*toggle fullscreen menu*/
+    $('.trigger').on('click', function() {
+    $(this).toggleClass('on');
+  $('.fullscreen-menu').fadeToggle(200);
+});
+    /*refresh*/
+    $('#refresh').on('click',function(){
+        location.reload();
+    })
     /*post contact info*/
 	$(".btn").click(function(){
         var postDate = new Date();
