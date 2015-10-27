@@ -280,7 +280,6 @@ body, html{
 /*home page*/
 .intro{
   padding-top: 150px;
-  opacity: 0.9;
 }
 .name{
   font-size:40px; 
@@ -590,6 +589,9 @@ footer{
   .fullscreen-menu li{
     font-size: 40px;
   }
+  .trigger{
+    right: 30px;
+  }
   .overlay-close{
     height: 30px;
     width: 30px;
@@ -602,7 +604,7 @@ footer{
   }
 
   .intro{
-    padding-top: 30px;
+    padding-top: 60px;
   }
   .title{
     padding-bottom: 20px;
