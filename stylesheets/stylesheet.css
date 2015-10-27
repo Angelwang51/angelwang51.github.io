@@ -17,7 +17,7 @@ body, html{
   background-color: #DC554F;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 6;
 }
 .loading-container{
   width:180px;
@@ -147,7 +147,7 @@ body, html{
   top: 30px;
   left: auto;
   bottom: auto;
-  right: 30px;
+  right: 50px;
   z-index: 4;
   cursor: pointer;
   transition: top .1s ease-in-out;
@@ -172,20 +172,6 @@ body, html{
 .span3{
   top: 20px;
   left: 0;
-}
-.on{
-  top: 40px;
-}
-.on .span1{
-  transform: rotate(45deg);
-}
-.on .span2{
-  transform: rotate(-45deg);
-  top: 0;
-}
-.on .span3{
-  transform: rotate(45deg);
-  top: 0;
 }
 .fullscreen-menu {
   background: rgba(0, 0, 0, 0.75);

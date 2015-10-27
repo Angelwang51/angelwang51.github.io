@@ -6,13 +6,12 @@ $(document).ready(function(){
     });
     /*toggle fullscreen menu*/
     $('.trigger').on('click', function() {
-    $(this).toggleClass('on');
-  $('.fullscreen-menu').fadeToggle(200);
-});
-    /*refresh*/
-    $('#refresh').on('click',function(){
-        location.reload();
-    })
+        $('.fullscreen-menu').fadeToggle(200);
+    });
+    $('.fullscreen-menu').click(function(){
+        $('.fullscreen-menu').fadeToggle(200);
+    });
+    
     /*post contact info*/
 	$(".btn").click(function(){
         var postDate = new Date();
