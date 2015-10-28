@@ -2,7 +2,7 @@ $(document).ready(function(){
     /*loading page*/
     $(window).load(function() {
         // Animate loader off screen
-        $(".loading-page").hide();;
+        $(".loading-page").hide();
     });
     /*toggle fullscreen menu*/
     $('.trigger').on('click', function() {
@@ -10,6 +10,11 @@ $(document).ready(function(){
     });
     $('.fullscreen-menu').click(function(){
         $('.fullscreen-menu').fadeToggle(200);
+    });
+    /*refresh*/
+    $('.overlay-goHome').click(function(){
+        $(".fullscreen-work-slide").hide();
+        $(location).attr('href','#home');
     });
     
     /*post contact info*/
@@ -31,40 +36,24 @@ $(document).ready(function(){
 			$(".contact-message").val("");
 	});
     /*open and close popup project intro page*/
-
+    $('.overlay-close').click(function(){
+        $('.fullscreen-work-slide').hide();
+    });
     $('#neeyer').click(function(){
-    	$('.slide-neeyer').show();
+    	$('#slide-neeyer').show();
     });
-    $('.overlay-close').click(function(){
-    	$('.slide-neeyer').hide();
+    $('#fireblog').click(function(){
+    	$('#slide-fireblog').show();
     });
-       $('#fireblog').click(function(){
-    	$('.slide-fireblog').show();
+    $('#somekolors').click(function(){
+    	$('#slide-somekolors').show();
     });
-    $('.overlay-close').click(function(){
-    	$('.slide-fireblog').hide();
+    $('#rreader').click(function(){
+        $('#slide-rreader').show();
     });
-       $('#somekolors').click(function(){
-    	$('.slide-somekolors').show();
-    });
-    $('.overlay-close').click(function(){
-    	$('.slide-somekolors').hide();
-    });
-
-      $('#rreader').click(function(){
-        $('.slide-rreader').show();
-    });
-    $('.overlay-close').click(function(){
-        $('.slide-rreader').hide();
-    });
-
     $('#reactblog').click(function(){
-        $('.slide-reactblog').show();
+        $('#slide-reactblog').show();
     });
-    $('.overlay-close').click(function(){
-        $('.slide-reactblog').hide();
-    });
-
-
+    
 });
 

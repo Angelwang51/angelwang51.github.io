@@ -349,7 +349,7 @@ body, html{
   height: 50%;
 }
 /*popup project intro page*/
-#fullscreen-work-slide{
+.fullscreen-work-slide{
   background: white;
   position: fixed;
   top: 0;
@@ -359,14 +359,14 @@ body, html{
   z-index: 5;
   display: none; 
 }
-/*popup page close cross*/  
+/*popup page close button*/  
 .overlay-close {
   padding: 0;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  right: 35px;
-  top: 50px;
+  right: 20px;
+  top: 20px;
   overflow: hidden;
   border: none;
   background: url(../images/cross.png) no-repeat center center;
@@ -375,6 +375,18 @@ body, html{
   outline: none;
   z-index: 100;
 }
+/*popup page goHome button*/
+.overlay-goHome{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+}
+.overlay-goHome:hover{
+  cursor: pointer;
+}
+
 /*make popup page scrollable*/
 .overlay-content {
   position: relative;
@@ -593,11 +605,8 @@ footer{
     right: 30px;
   }
   .overlay-close{
-    height: 30px;
-    width: 30px;
-  }
-  .navbar{
-    display:none;
+    height: 20px;
+    width: 20px;
   }
   .fixed-bg.bg-1{
     min-height: 500px;
