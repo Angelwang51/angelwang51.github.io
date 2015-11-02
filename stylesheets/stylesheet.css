@@ -305,26 +305,76 @@ body, html{
 /*whatIdo*/
 .title-whatIdo{
   margin-top: 70px;
+  margin-bottom: 30px;
 }
-.desc{
-  font-family: Avenir;
-  font-size: 23px;
+.four-item{
+  float: left;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+#img-item1{
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*.circle{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}*/
+.inner-circle{
+  background-color: rgba(143, 24, 30, 0.8);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 99px;
+  margin:auto;
+  left:0;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  display: none;
+  border: 6 solid rgba(143, 24, 30, 0.7)
+}
+.inner-circle:hover{
+  cursor: pointer;
+}
+.inner-circle-desc{
+  position: absolute;
   color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ui-design{
+  top: 42%;
+  left: 25%;
+}
+.coding{
+  top: 44%;
+  left: 33%;
+}
+.responsive-design{
+  top: 37%;
+  left: 23%;
+}
+.user-experience{
+  top:37%;
+  left: 26%;
+}
+.item-whatIdo{
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  position: relative;
 }
 #whatIdo{
   min-height: 800px;
   box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
   border-top: 5px solid #8f181e;
   border-bottom: 5px solid #8f181e;
-}
-.grid-pad-whatIdo{
-  text-align: center;
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-right: 100px;
 }
 .color-1{
   background-color:#e86d5e;
@@ -348,7 +398,7 @@ body, html{
   width:50%;
   height: 50%;
 }
-/*popup project intro page*/
+/*popup page*/
 .fullscreen-work-slide{
   background: white;
   position: fixed;
@@ -433,6 +483,7 @@ body, html{
 .project-intro{
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 100px;
 }
 .intro-content h4{
   line-height: 1.5;
@@ -456,7 +507,14 @@ body, html{
 .intro-content h4{
   font-size: 16px;
 }
-
+#name-img{
+  width: 500px;
+  height: 70px;
+  padding-left:30px;
+}
+.aboutMe-item h4{
+  line-height: 0.05;
+}
 #aboutMe-info{
   font-size: 17px;
   color: #fff;
@@ -469,6 +527,10 @@ body, html{
   max-height:40px;
   margin-right: 40px;
 }
+.grid-about{
+  padding-bottom: 40px;
+}
+/*contact*/
 #contactForm{
   background: rgba(255,255,255,0.3);
   max-height: 700px;
@@ -564,7 +626,15 @@ footer{
   padding-top: 100px;
   padding-bottom: 30px;
 }
-
+@media screen and (max-width: 980px){
+  .title-whatIdo{
+    margin-top:0;
+    margin-bottom: 0px;
+  }
+  .inner-circle{
+    left: 10px;
+  }
+}
 @media screen and (max-width: 776px){
   .name{
     font-size: 40px;
@@ -572,11 +642,9 @@ footer{
   .title{
     font-size: 18px;
   }
-  .title-whatIdo{
-    margin-top: 0;
-  }
-  .desc{
-    font-size: 15px;
+  .four-item{
+    float: none;
+    margin: 0 auto;
   }
   #aboutMe-info p{
     margin-bottom: 15px;
@@ -623,18 +691,37 @@ footer{
     padding-top: 60px;
     padding-bottom: 20px;
   }
+  #name-img{
+  width: 300px;
+  height: 40px;
+  padding-left:10px;
+}
+#name-img2{
+  width: 66px;
+  height: 30px;
+  border-top: 3 solid #fff;
+}
   #whatIdo{
     min-height: 500px;
   }
   .color-1{
     background:#e86d5e;
   }
-  .grid-whatIdo{
-    height: 100%;
-  }
+  
   .grid-pad-whatIdo{
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+  .inner-circle{
+    height: 130px;
+    width: 130px;
+  }
+  .inner-circle-desc{
+    font-size: 14px;
+  }
+  #img-item1{
+    width: 130px;
+    height: 130px;
   }
   .fixed-bg.bg-2{
     background: black;
@@ -651,10 +738,6 @@ footer{
   .title{
     font-size: 18px;
   }
-  .desc{
-    font-size: 16px;
-  }
-
   #aboutMe-info{
     font-size: 1em;
   }

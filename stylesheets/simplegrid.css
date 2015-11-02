@@ -171,7 +171,7 @@ body {
 	margin-left: 8.33%
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 980px) {
 	.grid {
 		width: 100%;
 		min-width: 0;
@@ -200,11 +200,11 @@ body {
 		padding-bottom: 0;
 	}
 
-	[class*='sm-col-']{
+	[class*='mobile-whatIdo-col-']{
 		float: left;
-		margin: 0 0 10px;
-		padding-left: 20px;
-		padding-right: 40px; /* column-space */
+		margin: 0 0 50px;
+		padding-left: 0px;
+		padding-right: 10px; /* column-space */
 		padding-bottom: 0;
 	}
 	.sm-col-1-2{
@@ -219,6 +219,11 @@ body {
 
 	.mobile-col-1-2, .mobile-col-6-12 {
 		width: 50%;
+		text-align: center;
+	}
+	.mobile-whatIdo-col-1-2, .mobile-col-6-12 {
+		width: 50%;
+		text-align: center;
 	}
 
 	.mobile-col-1-3, .mobile-col-4-12 {
