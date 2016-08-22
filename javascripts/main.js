@@ -69,6 +69,15 @@ $(document).ready(function(){
     $('#reactblog').click(function(){
         $('#slide-reactblog').show();
     });
+    $('#ba').click(function(){
+        $('#slide-ba').show();
+    });
+    $('#icatch').click(function(){
+        $('#slide-icatch').show();
+    });
+    $('#eco').click(function(){
+        $('#slide-eco').show();
+    });
     
 });
 

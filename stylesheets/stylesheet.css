@@ -319,13 +319,6 @@ body, html{
   margin-left: 10px;
   margin-right: 10px;
 }
-/*.circle{
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}*/
 .inner-circle{
   background-color: rgba(143, 24, 30, 0.8);
   width: 200px;
